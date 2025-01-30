@@ -1,8 +1,8 @@
-resource "kubernetes_namespace" "apps" {
-  metadata {
-    name = "apps"
-  }
-}
+# resource "kubernetes_namespace" "apps" {
+#   metadata {
+#     name = "apps"
+#   }
+# }
 
 # resource "kubernetes_deployment" "node_app" {
 #   metadata {
@@ -65,8 +65,7 @@ resource "kubernetes_namespace" "apps" {
 # }
 
 # Multiple files in a folder to be applied
-resource "kubernetes_manifest" "manifests" {
-  for_each = fileset("manifests/", "*.yaml")
-  manifest = yamldecode(file("manifests/${each.value}"))
-  
-}
+# resource "kubernetes_manifest" "manifests" {
+#   for_each = fileset("manifests/", "*.yaml")
+#   manifest = yamldecode(file("manifests/${each.value}"))
+# }
