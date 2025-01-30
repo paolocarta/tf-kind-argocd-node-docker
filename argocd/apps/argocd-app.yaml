@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: ''
+    repoURL: 'https://github.com/paolocarta/tf-kind-argocd-node-docker'
     targetRevision: HEAD
-    path: manifests/
+    path: app-manifests/my-node-app
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: apps
