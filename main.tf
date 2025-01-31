@@ -1,3 +1,7 @@
+#
+## App could be deployed with terraform. Currently is deployed with ArgoCD
+#
+
 # resource "kubernetes_namespace" "apps" {
 #   metadata {
 #     name = "apps"
